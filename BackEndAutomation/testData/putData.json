@@ -1,0 +1,26 @@
+{
+    "Id": 4001,
+    "Gender": "Male",
+    "Item": [
+        {
+            "Id": 4001,
+            "CartId": 4001,
+            "ItemName": "Arron",
+            "Size": 0,
+            "Weight": 0,
+            "Seller": "string"
+        }
+    ],
+    "CustomerName": "string",
+    "OrderQuantity": "string",
+    "Price": 0,
+    "Address": {
+        "Id": 4001,
+        "CartId": 4001,
+        "Street": "string",
+        "HouseNumber": 0,
+        "PostCode": "string",
+        "Town": "string"
+    },
+    "Message": "string"
+}

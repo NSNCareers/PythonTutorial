@@ -1,5 +1,6 @@
 from configparser import ConfigParser
 import pyodbc
+from pyodbc import Error
 
 
 def getValueFromPropertiesFile(self, section, sectionkey):
@@ -30,6 +31,11 @@ def getSQLConnection(databseName):
         + password
     )
 
-    if cnxn:
-        pass
-    return cnxn
+    try:
+        if cnxn.cursor() is None:
+            print("Connection faiked")
+        else:
+            print("Connection successfull")
+            return cnxn
+    except Error as e:
+        print(e)

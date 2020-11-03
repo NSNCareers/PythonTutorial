@@ -31,3 +31,6 @@ class GetShoppingData:
         urlId = "{0}{1}".format(url, Id)
         content = requests.get(urlId, headers=auth, verify=True)
         return content
+
+
+var = GetShoppingData().getAllFromShoppingCart(875)
